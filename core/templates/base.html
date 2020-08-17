@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +9,41 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
         <!--Scroll reveal CDN-->
         <script src="https://unpkg.com/scrollreveal"></script>
-        <link rel="stylesheet" href="main_style.css">
+        <link rel="stylesheet" href="{% static 'main.css' %}">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"> </i>
+                    <i class="fas fa-times"> </i>
+                </div>
+                <!-- <a href="index.html" class="logo"><img src="images/logo-rosa.png" alt=""></a> -->
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Forever</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">OiOi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Girl Boss</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- heder ends -->
     {% block content %}
 
     {% endblock %}
